@@ -26,6 +26,17 @@ class GameElement {
   // typically you have at least one named "drawMe" or "update" whose job
   // is to draw the visual aspects of an instance of this class
   void update() {
+        
+    // get each object to draw itself
+    
+    // 1. draw the game element itself (using properties of this instance of this class)
+    fill(shade);
+    rect(x, y, size, size);
+    
+    // 2. draw the point value for this element
+    textSize(size / 10);      // make text size relative to size of object
+    fill(0);                  // black text
+    text(points, 350, 250);
     
   }
   

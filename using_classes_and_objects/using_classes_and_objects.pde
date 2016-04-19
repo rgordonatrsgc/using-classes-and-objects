@@ -1,13 +1,19 @@
+// create a space in memory for game elements
+GameElement piece1;
+GameElement piece2;
+
 // this runs once
 void setup() {
+
   // draw canvas
   size(600, 400);
   
-  // rectangles draw position from center, not top-left corner
-  rectMode(CENTER);
+  // actually create two instances of the GameElement class
+  // first piece            x    y    size   shade    points
+  piece1 = new GameElement(350, 250, 100, 200, 5);
+  // second piece            x    y    size   shade    points
+  piece2 = new GameElement(100, 200, 50, 150, 10);
   
-  // text should be centred, horizontally and vertically, inside boundaries of text box
-  textAlign(CENTER, CENTER);
 }
 
 // this runs forever
@@ -17,23 +23,9 @@ void draw() {
   background(255);
   
   // draw first game element
-  // light gray, large target area, worth 5 points
-  fill(200);
-  rect(350, 250, 100, 100);
-  
-  // show point value
-  textSize(32);
-  fill(0);                  // black text
-  text("5", 350, 250);
+  piece1.update();
   
   // draw second game element
-  // darker gray, medium target area, worth 10 points
-  fill(200);
-  rect(100, 200, 50, 50);
-  
-  // show point value
-  textSize(16);
-  fill(0);                  // black text
-  text("10", 100, 200);
+  piece2.update(); 
   
 }

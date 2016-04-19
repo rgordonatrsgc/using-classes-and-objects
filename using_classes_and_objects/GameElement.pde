@@ -10,7 +10,15 @@ class GameElement {
   
   // constructor (this ones runs when an instance of this object is created, like "setup"
   //              in main program)
-  GameElement() {
+  GameElement(int _x, int _y, int _size, int _shade, int _points) {
+    
+    // Take all the values passed in the parameters, and assign to the
+    // properties (variables) that belong to this instance of the class
+    x = _x;
+    y = _y;
+    size = _size;
+    shade = _shade;
+    points = _points;
     
   }
   

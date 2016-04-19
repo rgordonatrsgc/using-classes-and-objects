@@ -2,6 +2,11 @@ class GameElement {
   
   // properties (variables) accessible only inside an instance of this class go here
   
+  int x;      // horizontal position of game element
+  int y;      // vertical position of game element
+  int size;   // width and height of game element
+  int shade;  // grayscale value / shade value of grey for element
+  int points; // points earned for clicking this element
   
   // constructor (this ones runs when an instance of this object is created, like "setup"
   //              in main program)

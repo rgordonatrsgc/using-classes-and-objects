@@ -25,4 +25,15 @@ void draw() {
   textSize(32);
   fill(0);                  // black text
   text("5", 350, 250);
+  
+  // draw second game element
+  // darker gray, medium target area, worth 10 points
+  fill(200);
+  rect(100, 200, 50, 50);
+  
+  // show point value
+  textSize(16);
+  fill(0);                  // black text
+  text("10", 100, 200);
+  
 }

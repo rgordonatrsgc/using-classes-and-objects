@@ -26,6 +26,13 @@ class GameElement {
   // typically you have at least one named "drawMe" or "update" whose job
   // is to draw the visual aspects of an instance of this class
   void update() {
+    
+    // cannot count on positioning rules to be set from main program, so set them here
+    // rectangles draw position from center, not top-left corner
+    rectMode(CENTER);
+    
+    // text should be centred, horizontally and vertically, inside boundaries of text box
+    textAlign(CENTER, CENTER);
         
     // get each object to draw itself
     

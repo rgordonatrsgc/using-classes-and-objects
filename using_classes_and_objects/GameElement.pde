@@ -43,7 +43,7 @@ class GameElement {
     // 2. draw the point value for this element
     textSize(size / 10);      // make text size relative to size of object
     fill(0);                  // black text
-    text(points, 350, 250);
+    text(points, x, y);
     
   }
   
